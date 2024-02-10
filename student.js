@@ -1,0 +1,2 @@
+const angemeldeteKurse = [];
+export { angemeldeteKurse };

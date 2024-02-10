@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Studenten- und Dozentenbild</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	<style>
+		.image-container {
+			width: 250px;
+			height: 250px;
+			border-radius: 5px;
+			overflow: hidden;
+		}
+
+		.image-container img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			filter: brightness(70%);
+		}
+
+		.image-container a {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 100%;
+			height: 100%;
+		}
+
+		.image-container:hover {
+			filter: opacity(70%);
+		}
+
+
+		.rollenauswahl {
+			height: 100vh;
+		}
+	</style>
+</head>
+
+<body class="rollenauswahl">
+	<div class="h-100 container d-flex justify-content-center align-items-center">
+
+		<div class="image-container me-4">
+			<a href="sites/student/dashboard.html">
+				<img src="https://images.unsplash.com/photo-1489980557514-251d61e3eeb6?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+					alt="Studentenbild">
+			</a>
+		</div>
+
+		<div class="image-container">
+			<a href="sites/dozent/dashboard.html">
+				<img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+					alt="Dozentenbild">
+			</a>
+		</div>
+
+
+	</div>
+</body>
+
+</html>

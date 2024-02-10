@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Kurssuche - Space University</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+	<link rel="stylesheet" href="../../index.css">
+
+	<style>
+		/* Aktiver Filter */
+		.dropdown-toggle.active-filter {
+			background-color: #e9ecef;
+			/* Hintergrundfarbe des aktiven Filters */
+			border-color: #ced4da;
+			/* Randfarbe des aktiven Filters */
+		}
+	</style>
+</head>
+
+<body>
+	<div>
+		<div class="d-flex justify-content-between align-items-center ms-3">
+
+
+            <div class="d-flex flex-row">
+                <a href="dashboard.html" class="back-button mt-2">
+                    <i class="fas fa-arrow-left"></i> <!-- FontAwesome Icon -->
+                </a>
+
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb mt-2 mb-2">
+                        <li class="breadcrumb-item"><a href="../../index.html">Rollenauswahl</a></li>
+                        <li class="breadcrumb-item"><a href="dashboard.html">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Kurssuche</li>
+                    </ol>
+                </nav>
+            </div>
+
+
+			
+
+
+			<div class="d-flex align-items-center mt-2 mb-2 ">
+
+
+
+
+				<!-- Profilavatar -->
+				<div class="profile-avatar me-2">G</div>
+
+				<a href="#" class="back-button ms-1 me-3">
+                    <i class="fas fa-inbox"></i> <!-- Geändert zu Inbox Icon -->
+                </a>
+
+                <!-- Home Icon -->
+                <a href="dashboard.html" class="back-button me-3">
+                    <i class="fas fa-home"></i>
+                </a>
+
+                <!-- LogOut Icon -->
+                <a href="../../index.html" class="back-button me-3">
+                    <i class="fas fa-sign-out-alt"></i>
+                </a>
+
+
+
+
+			</div>
+		</div>
+
+
+		<div class="background-pale header-img d-flex justify-content-center position-relative mb-5 position-relative">
+			<img src="../../assets/img/irene-organize.png" alt="header-illustration" class="img-fluid smaller">
+			<!-- Positionieren Sie das Emoji-Div als absolut innerhalb des relativ positionierten Elternteils -->
+
+		</div>
+
+
+
+	</div>
+
+
+	<div class="container">
+
+		<div class="row justify-content-center">
+			<div class="col-8">
+				<div class="input-group mb-3">
+					<input type="text" id="searchInput" class="form-control" placeholder="Veranstaltung suchen..."
+						aria-label="Veranstaltung suchen">
+					<!-- Entfernter Suchbutton -->
+					<!-- Icon, um das Dropdown-Menü zu steuern -->
+					<button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+						aria-expanded="false">
+						<i class="fas fa-filter"></i>
+					</button>
+					<ul id="filterDropdown" class="dropdown-menu dropdown-menu-end">
+						<li>
+							<a class="dropdown-item" href="#" data-filter="">Alle</a>
+						</li>
+						<li>
+							<a class="dropdown-item" href="#" data-filter="Informatik">Informatik</a>
+						</li>
+						<li>
+							<a class="dropdown-item" href="#" data-filter="Raumfahrttechnik">Raumfahrttechnik</a>
+						</li>
+						<li>
+							<a class="dropdown-item" href="#" data-filter="Astrophysik">Astrophysik</a>
+						</li>
+					</ul>
+				</div>
+				<!-- Links for "Meine Kurse" and "Vorgemerkte Kurse" -->
+				<div class="d-flex">
+					<a href="myCourses.html" class="me-4 text-gray anchor-hover">Meine Kurse</a>
+
+
+				</div>
+
+			</div>
+
+
+		</div>
+
+
+
+
+		<!-- Kurskacheln -->
+		<div class="row course-grid" id="courseGrid">
+			<!-- Kurskacheln werden hier über JavaScript eingefügt -->
+		</div>
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+	
+	
+	<script type="module" src="kurssuche.js"> </script>
+
+</body>
+
+</html>
